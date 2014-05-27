@@ -9,7 +9,7 @@ SERVICES="bfgminer cgminer cpuminer"
 # respective service as a sign of that service being stunned.
 # e.g. STUN_service1="detected new block" # bfg/cgminer
 # e.g. STUN_service2="Dispatching new work to" # cpuminer/minerd
-STUN_bfgminer="detected new block"
+STUN_bfgminer="requested work update"
 STUN_cgminer="detected new block"
 STUN_cpuminer="Dispatching new work to"
 
