@@ -1,12 +1,12 @@
 # Crutch
 A quick hack allowing you to monitor several miners on the same machine using a web browser as well as take corrective action if a miner gets stunned or crashes.
 
-Why did I write it? Well, ever since I started using my BeagleBone Black SBC as a miner controller, I noticed that the mining software and hardware isn't very stable. I found myself checking on it regularly and finding that it had either crashed (process terminated) or the hardware had failed (overheated or just stunned), requiring a miner process restart. That's when I started writing the critch script.
+Why did I write it? Well, ever since I started using my BeagleBone Black SBC as a miner controller, I noticed that the mining software and hardware isn't very stable. I found myself checking on it regularly and finding that it had either crashed (process terminated) or the hardware had failed (overheated or just stunned), requiring a miner process restart. That's when I started writing the crutch script.
 
 True, there are a lot of monitoring scripts out there, some of them quite fancy. I wanted something opposite of fancy. Something that doesn't require a database and is stupidly simple to install and run. More importantly, something you can run on an SBC like a BeagleBone, Raspberry Pi or even a router, without requiring a whole lot of resources like a MySQL database backend.
 
 ### FEATURES
-Crutch's main goal is simplicity and lightweightedness. I kid you not, this readme is longer than the main critch script. :)
+Crutch's main goal is simplicity and lightweightedness. I kid you not, this readme is longer than the main crutch script. :)
 
 * Monitor miners regularly (check for process existence and monitor miner log patterns for signs of stunned hardware).
 * Applies corrective action when anomaly is detected.
