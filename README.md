@@ -98,6 +98,10 @@ crontab -e
   * You can see the file crontab.sample for an example of how to set up crutch.sh as a scheduled task. I run it every 5 minutes, but you can choose any interval you wish. If your **OUTDIR** happens to be on a ramdisk, you can make this as frequent as every minute.
   * If you need help with cron, check [this](http://lmgtfy.com/?q=crontab+howto) out.
 
+#### Optional: rotate those logs!
+
+* Check out **logrotate.sample**. Obviously you need to edit it to suit your needs and ensure that the logrotate package is installed on your system.
+
 #### Optional: install the web front-end
 
 * Simply copy everything under the www directory into your web root.
