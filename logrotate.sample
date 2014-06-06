@@ -1,0 +1,16 @@
+# Sample logrotate file for crutch log
+# Make sure the path to the logfile matches
+# your crutch.sh config then drop this file
+# in /etc/logrotate.d and you're done!
+/run/shm/crutch.log {
+	# Specify the user and group that
+	# that the crutch script runs as
+	su crutchuser users
+	create 0644 crutchuser users
+	daily
+	rotate 7
+	missingok
+	notifempty
+	compress
+}
+
