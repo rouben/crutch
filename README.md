@@ -118,3 +118,4 @@ crontab -e
 ### TODO
 
 * Clean up PHP
+* Handle the contingency when a service was started manually outside of a screen session; perhaps check for a running process, **and** make sure a matching screen session exists. If both don't exist, assume something's wrong and either bail or kill -9 both the screen session and the "rogue" process and start both up properly. The bail vs. kill -9 & restart behaviour should be configurable.
