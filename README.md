@@ -112,7 +112,7 @@ crontab -e
   $services = array('bfgminer', 'cgminer');
   $out_dir = '/run/shm/';
   ```
-* You can further tweak the PHP script by changing snipplets of HTML code (right after the configuration section, e.g. the **<TITLE>** tag, and the list of links), as well as the last few lines that display the system uptime and include the image tags for the type of board (BeagleBoard) and CPU I'm using. You can put whatever you want there, really.
+* You can further tweak the PHP script by changing snipplets of HTML code (right after the configuration section, e.g. the ```<TITLE>``` tag, and the list of links), as well as the last few lines that display the system uptime and include the image tags for the type of board (BeagleBoard) and CPU I'm using. You can put whatever you want there, really.
 * If you need a PHP crash course, I suggest [this](http://www.codecademy.com/tracks/php).
 
 ### TODO
