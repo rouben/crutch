@@ -49,7 +49,7 @@ do
     screen -dmS $SERVICE $BINDIR$SERVICE
     echo "Restarted $SERVICE at $(date +'%Y-%m-%d %T %Z'), because it was down..." > $OUTDIR$SERVICE.status
   else
-    if [ "$(grep "$STUN" $OUTDIR$SERVICE.status | wc -l)" -gt "$THR" ]
+    if [ "$(grep -c "$STUN" $OUTDIR$SERVICE.status)" -gt "$THR" ]
     then
       echo "$(date +'%Y-%m-%d %T %Z'): Found more than $THR occurrences of \"$STUN\" in $OUTDIR$SERVICE.status. $SERVICE appears to be stunned, taking action!" >> $LOGFILE
       pkill -9 $SERVICE
